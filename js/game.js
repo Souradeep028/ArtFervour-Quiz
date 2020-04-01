@@ -3,6 +3,10 @@ const choices = Array.from(document.getElementsByClassName("choice-text"));
 const progressText = document.getElementById("progressText");
 const scoreText = document.getElementById("score");
 const progressBarFull = document.getElementById("progressBarFull");
+
+const finalScore = document.getElementById("finalScore");
+const resultText =document.getElementById("result");
+
 let currentQuestion = {};
 let acceptingAnswers = false;
 let score = 0;
@@ -111,4 +115,29 @@ choices.forEach(choice => {
 incrementScore = num => {
   score += num;
   scoreText.innerText = score;
+
+  if(score==50){
+    resultText.innerText = "Perfect score!";
+    finalScore.innerText =`You Scored : ${score}/50`;
+  }
+  else if(score==40){
+    resultText.innerText = "Awesome job, you got most of them right.";
+    finalScore.innerText =`You Scored : ${score}/50`;
+  }
+  else if(score==30){
+    resultText.innerText = "Pretty good, we'll say that's a pass.";
+    finalScore.innerText =`You Scored : ${score}/50`;
+  }
+  else if(score==20){
+    resultText.innerText = "Well, at least you got some of them right!";
+    finalScore.innerText =`You Scored : ${score}/50`;
+  }
+  else if(score==10){
+    resultText.innerText = "Looks like this was a tough one, better luck next time.";
+    finalScore.innerText =`You Scored : ${score}/50`;
+  }
+  else{
+    resultText.innerText = "Yikes, none correct. Well, maybe it was rigged?";
+    finalScore.innerText =`You Scored : 0/50`;
+  }
 };
