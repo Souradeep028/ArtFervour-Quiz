@@ -5,7 +5,7 @@
     "choice2": "Egon Schiele",
     "choice3": "Amedeo Modigliani",
     "choice4": "Lucian Freud",
-    "hint": "",
+    "hint": "The artist was involved in a lot of controversies due to his modern style of painting nudes.",
     "answer": 3
   },
   {
@@ -14,7 +14,7 @@
     "choice2": "Henri Matisse",
     "choice3": "Claude Monet",
     "choice4": "Pablo Picasso",
-    "hint": "",
+    "hint": "The artist was one of the pioneers of the style known as fauvism, coming from the word "fauves" (wild beasts).",
     "answer": 2
   },
   {
@@ -23,7 +23,7 @@
     "choice2": "Max Ernst",
     "choice3": "Jean Michel Basquiat",
     "choice4": "Rene Magritte",
-    "hint": "",
+    "hint": "This eccentric master of surrealism was expelled from art school, twice.",
     "answer": 1
   },
   {
@@ -32,7 +32,7 @@
     "choice2": "Rembrandt van Rijn",
     "choice3": "Jan Steen",  
     "choice4": "Caravaggio", 
-    "hint": "",
+    "hint": "Although the artist considered one of the greatest of all time, only 36 paintings authenticated by him, exist in the world.",
     "answer": 1
   },
   {
@@ -41,7 +41,7 @@
     "choice2": "Jean-Francois Fourtou",
     "choice3": "Rene Magritte",
     "choice4": "Frida Kahlo",
-    "hint": "",
+    "hint": "The artist combined imagery and text to question the viewers perception and understanding about reality.",
     "answer": 3
   }
 ]
