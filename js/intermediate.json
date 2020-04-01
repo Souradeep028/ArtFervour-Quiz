@@ -5,6 +5,7 @@
     "choice2": "Egon Schiele",
     "choice3": "Amedeo Modigliani",
     "choice4": "Lucian Freud",
+    "hint": "",
     "answer": 3
   },
   {
@@ -13,6 +14,7 @@
     "choice2": "Henri Matisse",
     "choice3": "Claude Monet",
     "choice4": "Pablo Picasso",
+    "hint": "",
     "answer": 2
   },
   {
@@ -21,6 +23,7 @@
     "choice2": "Max Ernst",
     "choice3": "Jean Michel Basquiat",
     "choice4": "Rene Magritte",
+    "hint": "",
     "answer": 1
   },
   {
@@ -29,6 +32,7 @@
     "choice2": "Rembrandt van Rijn",
     "choice3": "Jan Steen",  
     "choice4": "Caravaggio", 
+    "hint": "",
     "answer": 1
   },
   {
@@ -37,6 +41,7 @@
     "choice2": "Jean-Francois Fourtou",
     "choice3": "Rene Magritte",
     "choice4": "Frida Kahlo",
+    "hint": "",
     "answer": 3
   }
 ]

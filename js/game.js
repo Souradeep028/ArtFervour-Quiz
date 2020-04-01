@@ -3,6 +3,7 @@ const choices = Array.from(document.getElementsByClassName("choice-text"));
 const progressText = document.getElementById("progressText");
 const scoreText = document.getElementById("score");
 const progressBarFull = document.getElementById("progressBarFull");
+const hint = document.getElementById("hint");
 
 const finalScore = document.getElementById("finalScore");
 const resultText =document.getElementById("result");
@@ -77,7 +78,7 @@ getNewQuestion = () => {
   const questionIndex = Math.floor(Math.random() * availableQuesions.length);
   currentQuestion = availableQuesions[questionIndex];
   question.src = currentQuestion.question;
-
+  hint.innerText = currentQuestion.hint;
   choices.forEach(choice => {
     const number = choice.dataset["number"];
     choice.innerText = currentQuestion["choice" + number];

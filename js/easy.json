@@ -5,6 +5,7 @@
     "choice2": "Hemendranath Mazumdar'",
     "choice3": "Jamini Roy",
     "choice4": "Abhanindranath Tagore",
+    "hint": "The artist is best known for his representations of village life, especially \"Santhal\" women.",
     "answer": 3
   },
   {
@@ -13,6 +14,7 @@
     "choice2": "Sandro Botticelli",
     "choice3": "Leonardo da Vinci",
     "choice4": "Pablo Picasso",
+    "hint": "Although there are a number of versions of this painting, the original lies in the Louvre, Paris.",
     "answer": 3
   },
   {
@@ -21,6 +23,7 @@
     "choice2": "Francis Newton Souza",
     "choice3": "Syed Haider Raza",
     "choice4": "Akbar Padamsee",
+    "hint": "The artist was called the 'Picasso of India' by Forbes magazine ",
     "answer": 1
   },
   {
@@ -29,6 +32,7 @@
     "choice2": "Frida Kahlo",
     "choice3": "Salvador Dali",  
     "choice4": "Georgia O'Keeffe", 
+    "hint": "The artist had a tumultuous relationship with Mexican muralist, Diego Rivera.",
     "answer": 2
   },
   {
@@ -37,6 +41,7 @@
     "choice2": "Vincent van Gogh",
     "choice3": "Gustav Klimt",
     "choice4": "Henri Matisse",
+    "hint": "The artist's childhood was filled with tragedy which he later reflected in his artworks.",
     "answer": 1
   }
 ]
