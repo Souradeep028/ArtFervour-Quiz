@@ -32,7 +32,7 @@ body{
 .choice-prefix {
   padding: 1.5rem 2.5rem;
   background-color: #fedd00;
-  font-weight: 600;
+  font-weight: 700;
   color: #333;
 }
 
@@ -60,7 +60,7 @@ body{
 .hud-prefix {
   text-align: left;
   font-size: 1.6rem;
-  font-weight: 600;
+  font-weight: 700;
 }
 
 .hud-main-text {
