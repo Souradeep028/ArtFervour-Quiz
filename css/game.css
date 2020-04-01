@@ -57,7 +57,8 @@ body{
 
 .hud-prefix {
   text-align: left;
-  font-size: 2rem;
+  font-size: 1.6rem;
+  font-weight: 600;
 }
 
 .hud-main-text {
