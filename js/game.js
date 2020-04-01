@@ -95,20 +95,23 @@ choices.forEach(choice => {
     acceptingAnswers = false;
     const selectedChoice = e.target;
     const selectedAnswer = selectedChoice.dataset["number"];
-    // const correctAnswer = s[currentQuestion.answer];
-    // console.log(correctAnswer);
+    const correctAnswer = choices[currentQuestion.answer-1];
 
     const classToApply =
       selectedAnswer == currentQuestion.answer ? "correct" : "incorrect";
 
     if (classToApply === "correct") {
       incrementScore(CORRECT_BONUS);
+      selectedChoice.parentElement.classList.add(classToApply);
     }
-
-    selectedChoice.parentElement.classList.add(classToApply);
+    else {
+      selectedChoice.parentElement.classList.add(classToApply);
+      correctAnswer.parentElement.classList.add("correct");
+    }
 
     setTimeout(() => {
       selectedChoice.parentElement.classList.remove(classToApply);
+      correctAnswer.parentElement.classList.remove("correct");
       getNewQuestion();
     }, 600);
   });
