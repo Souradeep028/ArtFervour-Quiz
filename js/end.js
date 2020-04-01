@@ -10,24 +10,29 @@ const MAX_HIGH_SCORES = 5;
 
 if(mostRecentScore==50){
   resultText.innerText = "Perfect score!";
+  finalScore.innerText =`You Scored : ${mostRecentScore}/50`;
 }
 else if(mostRecentScore==40){
   resultText.innerText = "Awesome job, you got most of them right.";
+  finalScore.innerText =`You Scored : ${mostRecentScore}/50`;
 }
 else if(mostRecentScore==30){
   resultText.innerText = "Pretty good, we'll say that's a pass.";
+  finalScore.innerText =`You Scored : ${mostRecentScore}/50`;
 }
 else if(mostRecentScore==20){
   resultText.innerText = "Well, at least you got some of them right!";
+  finalScore.innerText =`You Scored : ${mostRecentScore}/50`;
 }
 else if(mostRecentScore==10){
   resultText.innerText = "Looks like this was a tough one, better luck next time.";
+  finalScore.innerText =`You Scored : ${mostRecentScore}/50`;
 }
 else{
   resultText.innerText = "Yikes, none correct. Well, maybe it was rigged?";
+  finalScore.innerText =`You Scored : 0/50`;
 }
 
-finalScore.innerText =`You Scored : ${mostRecentScore}/50`;
 
 // username.addEventListener("keyup", () => {
 //   saveScoreBtn.disabled = !username.value;
