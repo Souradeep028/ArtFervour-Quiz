@@ -54,7 +54,6 @@ $("#intermediate").click(()=>{
 //CONSTANTS
 const CORRECT_BONUS = 10;
 let MAX_QUESTIONS = 5;
-console.log('abc');
 
 startGame = () => {
   questionCounter = 0;
@@ -95,6 +94,8 @@ choices.forEach(choice => {
     acceptingAnswers = false;
     const selectedChoice = e.target;
     const selectedAnswer = selectedChoice.dataset["number"];
+    // const correctAnswer = s[currentQuestion.answer];
+    // console.log(correctAnswer);
 
     const classToApply =
       selectedAnswer == currentQuestion.answer ? "correct" : "incorrect";
