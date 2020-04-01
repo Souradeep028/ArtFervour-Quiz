@@ -111,7 +111,7 @@ choices.forEach(choice => {
       selectedChoice.parentElement.classList.remove(classToApply);
       correctAnswer.parentElement.classList.remove("correct");
       getNewQuestion();
-    }, 450);
+    }, 600);
   });
 });
 
