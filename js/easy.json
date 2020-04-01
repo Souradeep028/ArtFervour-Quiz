@@ -1,0 +1,42 @@
+[
+  {
+    "question": "img/q1.png",
+    "choice1": "Rabindranath Tagore",
+    "choice2": "Hemendranath Mazumdar'",
+    "choice3": "Jamini Roy",
+    "choice4": "Abhanindranath Tagore",
+    "answer": 3
+  },
+  {
+    "question": "img/q2.png",
+    "choice1": "Michelangelo",
+    "choice2": "Sandro Botticelli",
+    "choice3": "Leonardo da Vinci",
+    "choice4": "Pablo Picasso",
+    "answer": 3
+  },
+  {
+    "question": "img/q3.png",
+    "choice1": "Maqbool Fida Husein",
+    "choice2": "Francis Newton Souza",
+    "choice3": "Syed Haider Raza",
+    "choice4": "Akbar Padamsee",
+    "answer": 1
+  },
+  {
+    "question": "img/q4.png",
+    "choice1": "Louis Bourgeois",
+    "choice2": "Frida Kahlo",
+    "choice3": "Salvador Dali",  
+    "choice4": "Georgia O'Keeffe", 
+    "answer": 2
+  },
+  {
+    "question": "img/q5.png",
+    "choice1": "Edvard Munch",
+    "choice2": "Vincent van Gogh",
+    "choice3": "Gustav Klimt",
+    "choice4": "Henri Matisse",
+    "answer": 1
+  }
+]
