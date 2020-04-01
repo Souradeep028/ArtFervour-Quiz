@@ -13,7 +13,7 @@
     "choice2": "Henri Matisse",
     "choice3": "Claude Monet",
     "choice4": "Pablo Picasso",
-    "answer": 3
+    "answer": 2
   },
   {
     "question": "https://www.sartle.com/media/artwork/the-burning-giraffe-salvador-dali.jpg",
@@ -29,7 +29,7 @@
     "choice2": "Rembrandt van Rijn",
     "choice3": "Jan Steen",  
     "choice4": "Caravaggio", 
-    "answer": 2
+    "answer": 1
   },
   {
     "question": "https://thumbor.forbes.com/thumbor/960x0/https%3A%2F%2Fblogs-images.forbes.com%2Fchaddscott%2Ffiles%2F2018%2F10%2F12.-Son-of-Man-1200x1575.jpg",
@@ -37,6 +37,6 @@
     "choice2": "Jean-Francois Fourtou",
     "choice3": "Rene Magritte",
     "choice4": "Frida Kahlo",
-    "answer": 1
+    "answer": 3
   }
 ]
