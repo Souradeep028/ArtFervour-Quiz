@@ -9,13 +9,13 @@
     "answer": 3
   },
   {
-    "question": "img/q2.png",
-    "choice1": "Michelangelo",
-    "choice2": "Sandro Botticelli",
-    "choice3": "Leonardo da Vinci",
-    "choice4": "Pablo Picasso",
-    "hint": "Although there are a number of versions of this painting, the original lies in the Louvre, Paris.",
-    "answer": 3
+    "question": "https://www.artnews.com/wp-content/uploads/2018/06/2cloudgateplp.jpg",
+    "choice1": "Olafur Eliasson",
+    "choice2": "Anish Kapoor",
+    "choice3": "Jeff Koons",
+    "choice4": "David Hockney",
+    "hint": "This artist owns the rights to Vantablack, the blackest black ever made.",
+    "answer": 2
   },
   {
     "question": "img/q3.png",
@@ -36,12 +36,12 @@
     "answer": 2
   },
   {
-    "question": "img/q5.png",
-    "choice1": "Edvard Munch",
-    "choice2": "Vincent van Gogh",
-    "choice3": "Gustav Klimt",
-    "choice4": "Henri Matisse",
-    "hint": "The artist's childhood was filled with tragedy which he later reflected in his artworks.",
+    "question": "https://news.artnet.com/app/news-upload/2016/05/20160421_VM_Pumpkin_NorikoT_6526-1.jpg",
+    "choice1": "Yayoi Kusama",
+    "choice2": "Takashi Murakami",
+    "choice3": "James Turrell",
+    "choice4": "Jenny Holzer",
+    "hint": "TThe artist suffered from hallucinations even as a child and used art as a coping mechanism.",
     "answer": 1
   }
 ]
