@@ -77,10 +77,11 @@ getNewQuestion = () => {
   currentQuestion = availableQuesions[questionIndex];
   question.src = currentQuestion.question;
   hint.innerText = currentQuestion.hint;
+  setTimeout(()=>{
   choices.forEach(choice => {
     const number = choice.dataset["number"];
     choice.innerText = currentQuestion["choice" + number];
-  });
+  }), 40});
 
   availableQuesions.splice(questionIndex, 1);
   acceptingAnswers = true;
