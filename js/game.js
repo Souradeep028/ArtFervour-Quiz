@@ -6,7 +6,7 @@ const progressBarFull = document.getElementById("progressBarFull");
 const hint = document.getElementById("hint");
 
 const finalScore = document.getElementById("finalScore");
-const resultText =document.getElementById("result");
+const resultText = document.getElementById("result");
 
 let currentQuestion = {};
 let acceptingAnswers = false;
@@ -18,38 +18,38 @@ let questions = [];
 $("#game").hide();
 $("#end").hide();
 
-$("#easy").click(()=>{
+$("#easy").click(() => {
   $("#home").hide();
   $("#game").show();
   fetch("./js/easy.json")
-  .then(res => {
-    return res.json();
-  })
-  .then(loadedQuestions => {
-    questions = loadedQuestions;
+    .then(res => {
+      return res.json();
+    })
+    .then(loadedQuestions => {
+      questions = loadedQuestions;
 
-    startGame();
-  })
-  .catch(err => {
-    console.error(err);
-  });
+      startGame();
+    })
+    .catch(err => {
+      console.error(err);
+    });
 })
 
-$("#intermediate").click(()=>{
+$("#intermediate").click(() => {
   $("#home").hide();
   $("#game").show();
   fetch("./js/intermediate.json")
-  .then(res => {
-    return res.json();
-  })
-  .then(loadedQuestions => {
-    questions = loadedQuestions;
+    .then(res => {
+      return res.json();
+    })
+    .then(loadedQuestions => {
+      questions = loadedQuestions;
 
-    startGame();
-  })
-  .catch(err => {
-    console.error(err);
-  });
+      startGame();
+    })
+    .catch(err => {
+      console.error(err);
+    });
 })
 
 //CONSTANTS
@@ -64,7 +64,7 @@ startGame = () => {
 };
 
 getNewQuestion = () => {
-  if (availableQuesions.length === 0 || questionCounter >= MAX_QUESTIONS) {
+  if (availableQuesions.length === 0 || questionCounter === MAX_QUESTIONS) {
     localStorage.setItem("mostRecentScore", score);
     $("#game").hide();
     $("#end").show();
@@ -77,11 +77,12 @@ getNewQuestion = () => {
   currentQuestion = availableQuesions[questionIndex];
   question.src = currentQuestion.question;
   hint.innerText = currentQuestion.hint;
-  setTimeout(()=>{
-  choices.forEach(choice => {
-    const number = choice.dataset["number"];
-    choice.innerText = currentQuestion["choice" + number];
-  }), 1000});
+  setTimeout(() => {
+    choices.forEach(choice => {
+      const number = choice.dataset["number"];
+      choice.innerText = currentQuestion["choice" + number];
+    }), 500
+  });
 
   availableQuesions.splice(questionIndex, 1);
   acceptingAnswers = true;
@@ -94,7 +95,7 @@ choices.forEach(choice => {
     acceptingAnswers = false;
     const selectedChoice = e.target;
     const selectedAnswer = selectedChoice.dataset["number"];
-    const correctAnswer = choices[currentQuestion.answer-1];
+    const correctAnswer = choices[currentQuestion.answer - 1];
 
     const classToApply =
       selectedAnswer == currentQuestion.answer ? "correct" : "incorrect";
@@ -120,28 +121,28 @@ incrementScore = num => {
   score += num;
   scoreText.innerText = score;
 
-  if(score==50){
+  if (score == 50) {
     resultText.innerText = "Perfect score!";
-    finalScore.innerText =`You Scored : ${score}/50`;
+    finalScore.innerText = `You Scored : ${score}/50`;
   }
-  else if(score==40){
+  else if (score == 40) {
     resultText.innerText = "Awesome job, you got most of them right.";
-    finalScore.innerText =`You Scored : ${score}/50`;
+    finalScore.innerText = `You Scored : ${score}/50`;
   }
-  else if(score==30){
+  else if (score == 30) {
     resultText.innerText = "Pretty good, we'll say that's a pass.";
-    finalScore.innerText =`You Scored : ${score}/50`;
+    finalScore.innerText = `You Scored : ${score}/50`;
   }
-  else if(score==20){
+  else if (score == 20) {
     resultText.innerText = "Well, at least you got some of them right!";
-    finalScore.innerText =`You Scored : ${score}/50`;
+    finalScore.innerText = `You Scored : ${score}/50`;
   }
-  else if(score==10){
+  else if (score == 10) {
     resultText.innerText = "Looks like this was a tough one, better luck next time.";
-    finalScore.innerText =`You Scored : ${score}/50`;
+    finalScore.innerText = `You Scored : ${score}/50`;
   }
-  else{
+  else {
     resultText.innerText = "Yikes, none correct. Well, maybe it was rigged?";
-    finalScore.innerText =`You Scored : 0/50`;
+    finalScore.innerText = `You Scored : 0/50`;
   }
 };
