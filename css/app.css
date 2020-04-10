@@ -1,7 +1,7 @@
-@import url('https://fonts.googleapis.com/css?family=Montserrat:400,500,600,600i,700,800&display=swap');
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,500,600,600i,700,800&display=swap");
 
 :root {
-  background-color: #ffffff;
+  /* background-color: #ffffff; */
   font-size: 62.5%;
 }
 
@@ -13,7 +13,7 @@
   color: #333;
 }
 
-.logo{
+.logo {
   margin: 0 auto;
   display: block;
   margin-top: 30px;
@@ -32,21 +32,21 @@
   padding-top: 64px;
 }
 
-.icon-container{
+.icon-container {
   display: flex;
   flex-direction: row;
   justify-content: center;
   margin-top: 20px;
 }
 
-#hint{
-    width: 100%;
-    max-width: 500px;
-    display: block;
-    margin: 0 auto;
-    text-align: center;
-    font-size: 14px;
-    margin-bottom: 20px;
+#hint {
+  width: 100%;
+  max-width: 500px;
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 14px;
+  margin-bottom: 20px;
 }
 
 h1,
@@ -79,9 +79,20 @@ h3 {
 }
 
 /* UTILITIES */
+.main-container {
+  background: #fff;
+  width: 95%;
+  margin: 10px auto;
+  border: 2px solid #000;
+  border-radius: 24px;
+  background: url(https://d33wubrfki0l68.cloudfront.net/a22eae9b9425d865a7ff6e5fba4d675c217cb000/bg.jpg);
+  min-height: 97vh;
+  background-size: 160vh;
+  align-items: center;
+}
 
 .container {
-  width: 100vw;
+  /* width: 100vw; */
   min-height: 80vh;
   max-height: 148vh;
   display: flex;
@@ -97,6 +108,7 @@ h3 {
 }
 
 .flex-column {
+  position: relative;
   display: flex;
   flex-direction: column;
 }

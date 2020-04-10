@@ -1,5 +1,7 @@
 body{
-  min-height: 100vh;
+  min-height: 97vh;
+  background: #fbdd56;
+  box-sizing: border-box!important;
 }
 
 #question {
