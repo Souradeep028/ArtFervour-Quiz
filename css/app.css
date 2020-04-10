@@ -181,11 +181,11 @@ input::placeholder {
 
 @media (max-width: 1024px){
   body{
-    min-height: 90vh;
+    min-height: 70vh;
   }
   .main-container {
     margin: 10px auto;
     width: 95%;
-    min-height: 80vh;
+    min-height: 70vh;
   }
 }
