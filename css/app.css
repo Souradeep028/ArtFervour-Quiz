@@ -180,6 +180,9 @@ input::placeholder {
 }
 
 @media (max-width: 1024px){
+  body{
+    min-height: 90vh;
+  }
   .main-container {
     margin: 10px auto;
     width: 95%;
