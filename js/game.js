@@ -66,8 +66,8 @@ startGame = () => {
 getNewQuestion = () => {
   if (availableQuesions.length === 0 || questionCounter >= MAX_QUESTIONS) {
     localStorage.setItem("mostRecentScore", score);
-    $("#game").hide();
-    $("#end").show();
+    $("#game").hide(400).fadeIn();
+    $("#end").show(400).fadeIn();
   }
   questionCounter++;
   progressText.innerText = `Question : ${questionCounter}/${MAX_QUESTIONS}`;
@@ -111,7 +111,7 @@ choices.forEach(choice => {
       selectedChoice.parentElement.classList.remove(classToApply);
       correctAnswer.parentElement.classList.remove("correct");
       getNewQuestion();
-    }, 680);
+    }, 800);
   });
 });
 
