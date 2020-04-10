@@ -81,8 +81,9 @@ h3 {
 /* UTILITIES */
 .main-container {
   background: #fff;
-  width: 95%;
-  margin: 10px auto;
+  /* min-width: 50%;
+  max-width: 95%; */
+  margin: 10px 39.8%;
   border: 2px solid #000;
   border-radius: 24px;
   background: url(https://d33wubrfki0l68.cloudfront.net/a22eae9b9425d865a7ff6e5fba4d675c217cb000/bg.jpg);
