@@ -66,8 +66,8 @@ startGame = () => {
 getNewQuestion = () => {
   if (availableQuesions.length === 0 || questionCounter >= MAX_QUESTIONS) {
     localStorage.setItem("mostRecentScore", score);
-    $("#game").hide(400).fadeIn();
-    $("#end").show(400).fadeIn();
+    $("#game").hide();
+    $("#end").show();
   }
   questionCounter++;
   progressText.innerText = `Question : ${questionCounter}/${MAX_QUESTIONS}`;
