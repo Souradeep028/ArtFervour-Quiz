@@ -186,6 +186,6 @@ input::placeholder {
   .main-container {
     margin: 10px auto;
     width: 95%;
-    min-height: 90vh;
+    min-height: 80vh;
   }
 }
