@@ -81,8 +81,6 @@ h3 {
 /* UTILITIES */
 .main-container {
   background: #fff;
-  /* min-width: 50%;
-  max-width: 95%; */
   margin: 10px 39.8%;
   border: 2px solid #000;
   border-radius: 24px;
@@ -178,4 +176,11 @@ input {
 
 input::placeholder {
   color: #aaa;
+}
+
+@media (max-width: 1024px){
+  .main-container {
+    margin: 10px auto;
+    width: 95%;
+  }
 }
