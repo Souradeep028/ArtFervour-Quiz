@@ -105,6 +105,7 @@ choices.forEach(choice => {
       selectedChoice.parentElement.classList.add(classToApply);
     }
     else {
+      incrementScore(0);
       selectedChoice.parentElement.classList.add(classToApply);
       correctAnswer.parentElement.classList.add("correct");
     }
@@ -143,6 +144,6 @@ incrementScore = num => {
   }
   else {
     resultText.innerText = "Yikes, none correct. Well, maybe it was rigged?";
-    finalScore.innerText = `You Scored : 0/50`;
+    finalScore.innerText = `You Scored : ${score}/50`;
   }
 };
